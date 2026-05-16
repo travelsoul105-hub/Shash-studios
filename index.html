@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>21-Day Holistic Health Challenge in Kannada | Shash Studios Mysuru</title>
+<meta name="description" content="Karnataka's yoga & wellness challenge taught in Kannada by @sushiidays. Join 1,000+ students for the 21-Day Holistic Health Challenge — live from Mysuru.">
+<meta name="keywords" content="yoga Kannada, holistic health, Mysuru yoga, Shash Studios, sushiidays, 21 day challenge">
+<meta property="og:title" content="21-Day Holistic Health Challenge | Shash Studios Mysuru">
+<meta property="og:description" content="Karnataka's yoga & wellness challenge taught in Kannada by @sushiidays">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500&family=Noto+Sans+Kannada:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #F5C842;
+  --deep-sage: #3D6B4F;
+  --sage: #6B9E7A;
+  --cream: #FDFAF2;
+  --charcoal: #2A2A2A;
+  --cream-dark: #F2ECD8;
+  --sage-light: #E6F0EA;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden;}
+.kn{font-family:'Noto Sans Kannada',sans-serif;}
+img{display:block;max-width:100%;}
+
+/* ── BANNER ── */
+.banner{background:var(--gold);overflow:hidden;padding:.55rem 0;position:relative;z-index:200;}
+.marquee-track{display:flex;gap:4rem;animation:marquee 35s linear infinite;white-space:nowrap;width:max-content;}
+.marquee-item{font-size:.78rem;letter-spacing:.08em;font-weight:600;color:var(--deep-sage);flex-shrink:0;}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── STICKY NAV ── */
+.sticky-nav{position:fixed;top:-70px;left:0;right:0;z-index:150;background:var(--deep-sage);padding:.65rem 2rem;display:flex;justify-content:center;align-items:center;gap:.4rem;flex-wrap:wrap;transition:top .35s ease;box-shadow:0 4px 20px rgba(0,0,0,.18);}
+.sticky-nav.show{top:0;}
+.sticky-nav a{color:rgba(255,255,255,.72);text-decoration:none;font-size:.76rem;letter-spacing:.05em;padding:.38rem .9rem;border-radius:100px;transition:all .2s;font-weight:500;white-space:nowrap;}
+.sticky-nav a:hover{color:#fff;background:rgba(255,255,255,.12);}
+.sticky-nav a.cta-nav{background:var(--gold);color:var(--deep-sage);font-weight:700;}
+.sticky-nav a.cta-nav:hover{background:#e6b800;}
+
+/* ── HERO ── */
+.hero{display:grid;grid-template-columns:55% 45%;min-height:100vh;background:var(--cream);}
+.hero-left{padding:5rem 3.5rem 5rem 6rem;display:flex;flex-direction:column;justify-content:center;}
+.pill-tag{display:inline-flex;align-items:center;gap:.4rem;background:var(--sage-light);color:var(--deep-sage);padding:.4rem 1.1rem;border-radius:100px;font-size:.76rem;letter-spacing:.08em;font-weight:600;margin-bottom:1.4rem;width:fit-content;}
+.countdown{display:flex;align-items:center;gap:.6rem;margin-bottom:1.6rem;flex-wrap:wrap;}
+.cd-block{background:var(--deep-sage);color:#fff;border-radius:10px;padding:.55rem .75rem;text-align:center;min-width:60px;}
+.cd-num{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;line-height:1;display:block;}
+.cd-unit{font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;opacity:.65;}
+.cd-sep{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--deep-sage);font-weight:700;margin-bottom:.5rem;}
+.hero h1{font-family:'Noto Sans Kannada',sans-serif;font-size:clamp(2rem,3.5vw,3.6rem);line-height:1.18;color:var(--deep-sage);font-weight:600;margin-bottom:.4rem;}
+.hero h1 .gold{color:var(--gold);-webkit-text-stroke:1px #b8940a;}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:#666;font-style:italic;line-height:1.65;margin:1.1rem 0 1.5rem;}
+.checklist{list-style:none;margin-bottom:2rem;}
+.checklist li{display:flex;align-items:flex-start;gap:.7rem;margin-bottom:.75rem;font-size:.9rem;color:#555;line-height:1.55;}
+.checklist li::before{content:'✓';background:var(--deep-sage);color:#fff;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;flex-shrink:0;margin-top:2px;}
+.btn-gold{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:var(--deep-sage);padding:.95rem 2.2rem;border-radius:100px;font-size:.95rem;font-weight:700;text-decoration:none;border:none;cursor:pointer;transition:all .25s;font-family:'DM Sans',sans-serif;}
+.btn-gold:hover{background:#e6b800;transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,200,66,.45);}
+.trust-line{font-size:.76rem;color:#999;margin-top:.75rem;}
+.social-proof{font-size:.8rem;color:var(--deep-sage);font-weight:600;margin-top:.4rem;}
+.hero-right{position:relative;overflow:hidden;background:var(--sage-light);}
+.hero-right img{width:100%;height:100%;object-fit:cover;}
+.urgency-card{position:absolute;bottom:2.5rem;left:-1rem;background:#fff;border-radius:14px;padding:1rem 1.4rem;box-shadow:0 20px 60px rgba(0,0,0,.13);border-left:4px solid var(--gold);font-size:.8rem;line-height:1.6;max-width:215px;z-index:10;}
+.urgency-card strong{display:block;color:var(--deep-sage);font-size:.86rem;margin-bottom:.2rem;}
+.urgency-card a{color:var(--deep-sage);font-weight:700;}
+
+/* ── STATS ── */
+.stats-bar{background:var(--cream-dark);padding:2.5rem 6rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;border-top:1px solid rgba(61,107,79,.14);border-bottom:1px solid rgba(61,107,79,.14);}
+.stat-item{text-align:center;}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--deep-sage);display:block;line-height:1;}
+.stat-label{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);margin-top:.4rem;display:block;}
+
+/* ── TESTIMONIALS ── */
+.testimonials{padding:7rem 6rem;background:var(--deep-sage);}
+.section-header{text-align:center;margin-bottom:3.5rem;}
+.section-tag{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);font-weight:700;display:flex;align-items:center;justify-content:center;gap:.6rem;margin-bottom:.9rem;}
+.section-tag::before,.section-tag::after{content:'';width:28px;height:1px;background:var(--gold);}
+.section-tag.sage-tag{color:var(--sage);}
+.section-tag.sage-tag::before,.section-tag.sage-tag::after{background:var(--sage);}
+.section-tag.ds-tag{color:var(--deep-sage);}
+.section-tag.ds-tag::before,.section-tag.ds-tag::after{background:var(--deep-sage);}
+.section-header h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3vw,2.9rem);font-weight:700;color:var(--cream);line-height:1.2;}
+.section-header h2.dark{color:var(--deep-sage);}
+.section-header p{color:rgba(255,255,255,.58);font-size:1rem;margin-top:.5rem;}
+.section-header p.dark{color:#777;}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-bottom:2.5rem;}
+.testi-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:20px;padding:1.8rem;transition:all .3s;}
+.testi-card:hover{background:rgba(255,255,255,.12);transform:translateY(-4px);}
+.testi-stars{color:var(--gold);font-size:.88rem;margin-bottom:.75rem;}
+.testi-text{font-family:'Noto Sans Kannada',sans-serif;font-size:.86rem;color:rgba(255,255,255,.87);line-height:1.75;margin-bottom:.9rem;}
+.testi-result{background:rgba(245,200,66,.13);border-left:3px solid var(--gold);padding:.45rem .8rem;font-size:.72rem;color:var(--gold);border-radius:0 8px 8px 0;margin-bottom:1.1rem;font-weight:600;}
+.testi-author{display:flex;align-items:center;gap:.7rem;}
+.testi-avatar{width:38px;height:38px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:.95rem;flex-shrink:0;}
+.testi-name{font-size:.83rem;font-weight:600;color:var(--cream);}
+.testi-loc{font-size:.7rem;color:rgba(255,255,255,.48);}
+.results-summary{background:rgba(245,200,66,.1);border:1px solid rgba(245,200,66,.28);border-radius:16px;padding:1.4rem 2rem;display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;}
+.result-stat{text-align:center;color:var(--gold);font-size:1.5rem;font-weight:700;font-family:'Cormorant Garamond',serif;}
+.result-stat span{display:block;font-size:.72rem;color:rgba(255,255,255,.55);font-family:'DM Sans',sans-serif;font-weight:400;margin-top:.15rem;}
+
+/* ── WHO IS THIS FOR ── */
+.who-for{padding:7rem 6rem;background:var(--cream);}
+.audience-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin-bottom:2rem;}
+.audience-card{background:#fff;border:1px solid rgba(61,107,79,.15);border-radius:16px;padding:1.4rem;display:flex;align-items:flex-start;gap:.9rem;transition:all .25s;}
+.audience-card:hover{border-color:var(--sage);box-shadow:0 8px 28px rgba(61,107,79,.1);transform:translateY(-2px);}
+.audience-icon{font-size:1.9rem;flex-shrink:0;}
+.audience-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:700;color:var(--deep-sage);margin-bottom:.2rem;}
+.audience-desc{font-size:.8rem;color:#777;line-height:1.55;}
+.not-for{background:#FFF5F5;border:1.5px solid #ef5350;border-radius:12px;padding:1.1rem 1.4rem;color:#c62828;font-size:.85rem;font-weight:600;display:flex;align-items:flex-start;gap:.7rem;line-height:1.6;}
+
+/* ── HABITS ── */
+.habits{padding:7rem 6rem;background:var(--sage-light);}
+.habits-table{border-radius:20px;overflow:hidden;box-shadow:0 10px 40px rgba(61,107,79,.1);}
+.habit-row{display:grid;grid-template-columns:56px 1fr 1.6fr;align-items:stretch;background:#fff;border-bottom:1px solid var(--sage-light);transition:background .2s;}
+.habit-row:last-child{border-bottom:none;}
+.habit-row:hover{background:var(--cream);}
+.habit-num{background:var(--deep-sage);color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;display:flex;align-items:center;justify-content:center;}
+.habit-icon-name{padding:1.3rem 1.6rem;border-right:1px solid var(--sage-light);}
+.habit-icon{font-size:1.4rem;margin-bottom:.25rem;}
+.habit-kannada{font-family:'Noto Sans Kannada',sans-serif;font-size:.95rem;font-weight:600;color:var(--deep-sage);}
+.habit-english{font-size:.73rem;color:var(--sage);letter-spacing:.03em;}
+.habit-desc{padding:1.3rem 1.8rem;font-size:.85rem;color:#666;line-height:1.65;display:flex;align-items:center;}
+
+/* ── TEACHER ── */
+.teacher{padding:7rem 6rem;background:var(--cream);display:grid;grid-template-columns:1fr 1.1fr;gap:5rem;align-items:center;}
+.teacher-img{width:100%;border-radius:24px;}
+.teacher-name{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:700;color:var(--deep-sage);line-height:1.1;margin:.4rem 0 .3rem;}
+.teacher-subtitle{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--sage);font-style:italic;margin-bottom:1.3rem;}
+.teacher-tags{display:flex;gap:.45rem;flex-wrap:wrap;margin-bottom:1.5rem;}
+.teacher-tag{background:var(--sage-light);color:var(--deep-sage);padding:.28rem .8rem;border-radius:100px;font-size:.72rem;font-weight:600;}
+.bio-kn{font-family:'Noto Sans Kannada',sans-serif;font-size:.94rem;color:var(--deep-sage);line-height:1.85;margin-bottom:1rem;background:var(--sage-light);padding:.9rem 1.1rem;border-radius:12px;border-left:3px solid var(--sage);}
+.bio-en{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#666;line-height:1.8;font-style:italic;margin-bottom:.85rem;}
+.teacher-story{font-size:.87rem;color:#777;line-height:1.7;margin-bottom:1.4rem;}
+.contact-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--deep-sage);color:#fff;padding:.55rem 1.2rem;border-radius:100px;font-size:.8rem;font-weight:500;text-decoration:none;}
+
+/* ── REGISTER ── */
+.register{padding:7rem 6rem;background:var(--cream-dark);}
+.register-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:4rem;align-items:start;}
+.register-left h2{font-family:'Noto Sans Kannada',sans-serif;font-size:2rem;font-weight:600;color:var(--deep-sage);line-height:1.2;margin-bottom:.4rem;}
+.register-left > p{font-size:.88rem;color:#888;margin-bottom:1.8rem;}
+.block-label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--deep-sage);font-weight:700;margin-bottom:.75rem;display:block;}
+.batch-cards{display:flex;flex-direction:column;gap:.6rem;margin-bottom:1.3rem;}
+.batch-card{background:#fff;border:1.5px solid rgba(61,107,79,.18);border-radius:12px;padding:.9rem 1.1rem;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:.8rem;}
+.batch-card:hover,.batch-card.sel{border-color:var(--deep-sage);background:var(--sage-light);}
+.batch-card.sel{box-shadow:0 0 0 2px var(--deep-sage);}
+.batch-time{font-weight:700;color:var(--deep-sage);font-size:.88rem;}
+.batch-desc{font-size:.73rem;color:#999;}
+.recording-note{background:rgba(245,200,66,.14);border:1px solid rgba(245,200,66,.38);border-radius:10px;padding:.75rem 1rem;font-size:.78rem;color:#7a5e00;margin-bottom:1.8rem;display:flex;align-items:flex-start;gap:.5rem;line-height:1.6;}
+.price-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;margin-bottom:.7rem;}
+.price-card{background:#fff;border:1.5px solid rgba(61,107,79,.18);border-radius:12px;padding:1rem;cursor:pointer;transition:all .2s;text-align:center;}
+.price-card:hover,.price-card.sel{border-color:var(--gold);background:rgba(245,200,66,.07);}
+.price-card.sel{box-shadow:0 0 0 2px var(--gold);}
+.price-amount{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--deep-sage);}
+.price-tier{font-size:.7rem;color:#aaa;margin-top:.15rem;}
+.pay-note{font-family:'Noto Sans Kannada',sans-serif;font-size:.78rem;color:#999;text-align:center;margin-bottom:1.6rem;}
+.reg-form{background:#fff;border-radius:24px;padding:2.4rem;box-shadow:0 10px 50px rgba(61,107,79,.09);border:1px solid rgba(61,107,79,.1);}
+.reg-form h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:700;color:var(--deep-sage);margin-bottom:1.4rem;}
+.form-group{margin-bottom:1.1rem;}
+.form-label{display:block;font-size:.76rem;font-weight:600;color:var(--deep-sage);margin-bottom:.38rem;}
+.form-label .kn-lbl{font-family:'Noto Sans Kannada',sans-serif;font-weight:400;color:var(--sage);}
+.form-input,.form-select{width:100%;padding:.75rem 1rem;border:1.5px solid rgba(61,107,79,.2);border-radius:10px;font-size:.86rem;font-family:'DM Sans',sans-serif;color:var(--charcoal);background:var(--cream);outline:none;transition:border-color .2s;}
+.form-input:focus,.form-select:focus{border-color:var(--deep-sage);}
+.form-checkbox{display:flex;align-items:flex-start;gap:.6rem;font-size:.78rem;color:#777;cursor:pointer;margin-bottom:1.4rem;line-height:1.55;}
+.form-checkbox input{margin-top:2px;accent-color:var(--deep-sage);flex-shrink:0;}
+.scholarship-link{text-align:center;margin-top:1rem;font-size:.78rem;color:#aaa;}
+.scholarship-link a{color:var(--deep-sage);font-weight:600;}
+
+/* ── FAQ ── */
+.faq{padding:7rem 6rem;background:var(--cream);}
+.faq-list{max-width:800px;margin:0 auto;}
+.faq-item{border-bottom:1px solid rgba(61,107,79,.14);}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:1.3rem 0;font-family:'Noto Sans Kannada',sans-serif;font-size:.92rem;font-weight:600;color:var(--deep-sage);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;line-height:1.5;}
+.faq-q:hover{color:var(--sage);}
+.faq-icon{width:26px;height:26px;border-radius:50%;background:var(--sage-light);display:flex;align-items:center;justify-content:center;font-size:.95rem;color:var(--deep-sage);flex-shrink:0;transition:transform .3s;font-style:normal;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;}
+.faq-item.open .faq-a{max-height:300px;}
+.faq-a-inner{padding:0 0 1.3rem;font-size:.86rem;color:#666;line-height:1.75;}
+
+/* ── FINAL CTA ── */
+.final-cta{padding:7rem 6rem;background:var(--deep-sage);text-align:center;}
+.urgency-line{color:#ff6b6b;font-size:.82rem;font-weight:700;letter-spacing:.06em;margin-bottom:1.4rem;}
+.final-cta h2{font-family:'Noto Sans Kannada',sans-serif;font-size:clamp(1.7rem,3.5vw,3rem);color:var(--cream);font-weight:600;line-height:1.3;margin-bottom:.5rem;}
+.final-cta h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.5vw,1.9rem);color:var(--gold);font-style:italic;font-weight:400;margin-bottom:1.8rem;}
+.final-cta p{font-family:'Cormorant Garamond',serif;font-size:1.12rem;color:rgba(255,255,255,.72);max-width:600px;margin:0 auto .9rem;line-height:1.75;}
+.trust-row{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-top:1.4rem;font-size:.78rem;color:rgba(255,255,255,.6);}
+.closing-tagline{margin-top:3rem;font-family:'Cormorant Garamond',serif;font-size:1.55rem;font-style:italic;color:rgba(255,255,255,.45);}
+.closing-tagline span{display:block;font-size:.82rem;color:var(--gold);font-style:normal;font-family:'DM Sans',sans-serif;margin-top:.3rem;}
+
+/* ── FOOTER ── */
+footer{background:var(--charcoal);color:rgba(255,255,255,.65);padding:4rem 6rem 2.5rem;}
+.footer-top{display:grid;grid-template-columns:1.6fr 1fr;gap:4rem;margin-bottom:2.5rem;align-items:start;}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:#fff;letter-spacing:-.02em;}
+.footer-logo-kn{font-family:'Noto Sans Kannada',sans-serif;font-size:.86rem;color:var(--gold);margin:.1rem 0 .6rem;}
+.footer-tagline{font-family:'Cormorant Garamond',serif;font-size:.95rem;font-style:italic;color:rgba(255,255,255,.42);margin-bottom:1.3rem;}
+.footer-nav{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem;margin-bottom:1.2rem;}
+.footer-nav a{color:rgba(255,255,255,.58);text-decoration:none;font-size:.8rem;transition:color .2s;}
+.footer-nav a:hover{color:var(--gold);}
+.footer-social{display:flex;gap:.6rem;}
+.social-link{background:rgba(255,255,255,.08);color:rgba(255,255,255,.65);padding:.38rem .9rem;border-radius:100px;font-size:.76rem;text-decoration:none;transition:all .2s;}
+.social-link:hover{background:var(--gold);color:var(--deep-sage);}
+.footer-legal{display:flex;gap:1.3rem;flex-wrap:wrap;margin-bottom:1rem;}
+.footer-legal a{font-size:.73rem;color:rgba(255,255,255,.36);text-decoration:none;transition:color .2s;}
+.footer-legal a:hover{color:rgba(255,255,255,.65);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.8rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:.76rem;color:rgba(255,255,255,.3);}
+
+/* ── WHATSAPP ── */
+.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:999;background:#25D366;color:#fff;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.45rem;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.42);transition:all .25s;}
+.wa-float:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(37,211,102,.55);}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  .hero{grid-template-columns:1fr;}
+  .hero-left{padding:3.5rem 1.5rem 2rem;}
+  .hero-right{height:300px;}
+  .hero-right img{height:300px;object-fit:cover;}
+  .urgency-card{left:1rem;bottom:1rem;}
+  .stats-bar{padding:2rem 1.5rem;grid-template-columns:repeat(2,1fr);}
+  .testimonials,.who-for,.habits,.teacher,.register,.faq,.final-cta{padding:4rem 1.5rem;}
+  .testi-grid{grid-template-columns:1fr;}
+  .results-summary{gap:1.5rem;}
+  .audience-grid{grid-template-columns:1fr 1fr;gap:.8rem;}
+  .audience-card{padding:.9rem;flex-direction:column;gap:.5rem;}
+  .habits-table{border-radius:12px;}
+  .habit-row{grid-template-columns:44px 1fr;}
+  .habit-icon-name{border-right:none;border-bottom:1px solid var(--sage-light);}
+  .habit-desc{grid-column:2;padding-top:0;}
+  .teacher{grid-template-columns:1fr;padding:4rem 1.5rem;gap:2rem;}
+  .register-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .price-cards{grid-template-columns:repeat(2,1fr);}
+  footer{padding:3rem 1.5rem 2rem;}
+  .footer-top{grid-template-columns:1fr;gap:2rem;}
+  .footer-bottom{flex-direction:column;align-items:flex-start;}
+  .sticky-nav{padding:.5rem .8rem;justify-content:flex-start;overflow-x:auto;gap:.25rem;}
+  .sticky-nav a{font-size:.68rem;padding:.32rem .65rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ SECTION 1: ANNOUNCEMENT BANNER ══ -->
+<div class="banner">
+  <div class="marquee-track">
+    <span class="marquee-item">🌿 New batch starting June 1, 2025 · Only 47 seats remaining · Taught in Kannada &amp; English · Live from Mysuru, Karnataka ✦</span>
+    <span class="marquee-item">🌿 New batch starting June 1, 2025 · Only 47 seats remaining · Taught in Kannada &amp; English · Live from Mysuru, Karnataka ✦</span>
+    <span class="marquee-item">🌿 New batch starting June 1, 2025 · Only 47 seats remaining · Taught in Kannada &amp; English · Live from Mysuru, Karnataka ✦</span>
+    <span class="marquee-item">🌿 New batch starting June 1, 2025 · Only 47 seats remaining · Taught in Kannada &amp; English · Live from Mysuru, Karnataka ✦</span>
+  </div>
+</div>
+
+<!-- ══ SECTION 2: STICKY MINI NAV ══ -->
+<nav class="sticky-nav" id="stickyNav">
+  <a href="#testimonials">Testimonials</a>
+  <a href="#benefits">Benefits</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#faq">FAQs</a>
+  <a href="#teacher">Your Teacher</a>
+  <a href="#register" class="cta-nav">Register Now →</a>
+</nav>
+
+<!-- ══ SECTION 3: HERO ══ -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="pill-tag">🪷 Karnataka's holistic wellness community</div>
+
+    <div class="countdown" id="countdown">
+      <div class="cd-block"><span class="cd-num" id="cd-days">00</span><span class="cd-unit">Days</span></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-block"><span class="cd-num" id="cd-hrs">00</span><span class="cd-unit">Hours</span></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-block"><span class="cd-num" id="cd-min">00</span><span class="cd-unit">Min</span></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-block"><span class="cd-num" id="cd-sec">00</span><span class="cd-unit">Sec</span></div>
+    </div>
+
+    <h1 class="kn">ನಿಮ್ಮ ಆರೋಗ್ಯ ಬದಲಾಗಲಿ —<br><span class="gold">21 ದಿನಗಳಲ್ಲಿ.</span></h1>
+    <p class="hero-sub">Transform Your Health in 21 Days — Mind, Body &amp; Soul.</p>
+
+    <ul class="checklist">
+      <li><span class="kn">ಕನ್ನಡದಲ್ಲಿ ಕಲಿಯಿರಿ</span> — Learn entirely in Kannada with live guidance</li>
+      <li>Morning yoga, pranayama, sattvic food &amp; lifestyle habits — <span class="kn">ಒಂದೇ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ</span></li>
+      <li>Real results backed by 1,000+ Karnataka students in just 21 days</li>
+    </ul>
+
+    <a href="#register" class="btn-gold kn" style="width:fit-content;">🌿 ಈಗಲೇ ನೋಂದಾಯಿಸಿ — Register Now →</a>
+    <p class="trust-line">🔒 Secure payment · Instant WhatsApp confirmation</p>
+    <p class="social-proof">⭐ 4.9 rated · 1,000+ students · Live from Mysuru</p>
+  </div>
+
+  <div class="hero-right">
+    <img src="https://placehold.co/600x700/3D6B4F/FDFAF2?text=sushiidays" alt="Sushii Days — 21 Day Holistic Health Challenge">
+    <div class="urgency-card">
+      📅 <strong>Next batch: June 1 · 47 seats</strong>
+      Limited seats · First come first served.<br>
+      <a href="#register">Register now →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION 4: STATS BAR ══ -->
+<div class="stats-bar" id="benefits">
+  <div class="stat-item reveal"><span class="stat-num">1,000+</span><span class="stat-label">Students Transformed</span></div>
+  <div class="stat-item reveal"><span class="stat-num">21</span><span class="stat-label">Days Program</span></div>
+  <div class="stat-item reveal"><span class="stat-num">4.9 ★</span><span class="stat-label">Rated by Students</span></div>
+  <div class="stat-item reveal"><span class="stat-num">4</span><span class="stat-label">Batch Timings</span></div>
+</div>
+
+<!-- ══ SECTION 5: TESTIMONIALS ══ -->
+<section class="testimonials" id="testimonials">
+  <div class="section-header reveal">
+    <div class="section-tag">Community Love</div>
+    <h2>Real Students. <em style="color:var(--gold);font-style:italic;">Real Results.</em></h2>
+    <p>Karnataka students share their 21-day transformation stories</p>
+  </div>
+
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"3 ವರ್ಷದಿಂದ ಬೆನ್ನು ನೋವಿದ್ದ ನನಗೆ 21 ದಿನಗಳಲ್ಲಿ ನೋವು ಮಾಯವಾಯಿತು. ಇದು ನಂಬಲಾಗದ ಅನುಭವ."</p>
+      <div class="testi-result">✓ Back pain gone in 21 days</div>
+      <div class="testi-author"><div class="testi-avatar">S</div><div><div class="testi-name">Savitha Gowda, 38</div><div class="testi-loc">Mysuru, Karnataka</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"ಕನ್ನಡದಲ್ಲಿ yoga ಕಲಿಯಲು ಸಿಕ್ಕಿದ್ದು ತುಂಬಾ ಖುಷಿ. Stress ಕಡಿಮೆಯಾಯ್ತು, ರಾತ್ರಿ ನಿದ್ದೆ ಬಂತು."</p>
+      <div class="testi-result">✓ Sleep &amp; stress improved</div>
+      <div class="testi-author"><div class="testi-avatar">K</div><div><div class="testi-name">Kiran Raj, 29</div><div class="testi-loc">Bengaluru IT Professional</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"PCOD ಇದ್ದರೂ 4 kg ತೂಕ ಕಡಿಮೆಯಾಯ್ತು, ಮೊಖದ ಮೇಲೆ glow ಬಂತು."</p>
+      <div class="testi-result">✓ 4 kg lost, PCOD improving</div>
+      <div class="testi-author"><div class="testi-avatar">D</div><div><div class="testi-name">Deepa Suresh, 26</div><div class="testi-loc">Mangaluru, Karnataka</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"ಈಗ ಬೆಳಗ್ಗೆ 5:30ಕ್ಕೆ ಎದ್ದು yoga ಮಾಡ್ತಿದ್ದೇನೆ. Energy 10 ಪಟ್ಟು ಜಾಸ್ತಿ ಆಗಿದೆ."</p>
+      <div class="testi-result">✓ Energy 10x, wakes at 5:30am</div>
+      <div class="testi-author"><div class="testi-avatar">R</div><div><div class="testi-name">Rekha Naik, 44</div><div class="testi-loc">Dharwad, Karnataka</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"21 days ನಲ್ಲಿ digestion ಸರಿಯಾಯ್ತು, junk food cravings ಸಂಪೂರ್ಣ ಹೋಯ್ತು. ನಂಬಿದ್ದೇ ನಿಜವಾಯ್ತು!"</p>
+      <div class="testi-result">✓ Digestion fixed, junk cravings gone</div>
+      <div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">Anand Kulkarni, 33</div><div class="testi-loc">Hubli, Karnataka</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"3 ತಿಂಗಳಿಂದ ಬರ್ತಿದ್ದ migraine headaches 21 days program ನಂತರ ನಿಂತೇ ಹೋಯ್ತು. ಅದ್ಭುತ!"</p>
+      <div class="testi-result">✓ Migraine headaches stopped</div>
+      <div class="testi-author"><div class="testi-avatar">P</div><div><div class="testi-name">Priya Hegde, 31</div><div class="testi-loc">Udupi, Karnataka</div></div></div>
+    </div>
+  </div>
+
+  <div class="results-summary reveal">
+    <div class="result-stat">89%<span>Better Sleep</span></div>
+    <div class="result-stat">84%<span>Morning Energy</span></div>
+    <div class="result-stat">91%<span>Less Stress</span></div>
+  </div>
+</section>
+
+<!-- ══ SECTION 6: WHO IS THIS FOR ══ -->
+<section class="who-for" id="for-whom">
+  <div class="section-header reveal">
+    <div class="section-tag sage-tag">ಯಾರಿಗೆ ಇದು?</div>
+    <h2 class="dark">Is This Challenge <em style="color:var(--sage);font-style:italic;">Right For You?</em></h2>
+    <p class="dark">Designed for anyone who wants to feel better — taught in Kannada</p>
+  </div>
+
+  <div class="audience-grid reveal">
+    <div class="audience-card">
+      <span class="audience-icon">💼</span>
+      <div><div class="audience-title">Working Professionals</div><div class="audience-desc">IT employees, government staff, teachers — anyone who sits all day and needs to reset their energy and health.</div></div>
+    </div>
+    <div class="audience-card">
+      <span class="audience-icon">🏠</span>
+      <div><div class="audience-title"><span class="kn">ಗೃಹಿಣಿಯರು</span> — Homemakers</div><div class="audience-desc">Women managing homes who want a structured wellness practice that fits around family responsibilities.</div></div>
+    </div>
+    <div class="audience-card">
+      <span class="audience-icon">📚</span>
+      <div><div class="audience-title">Students &amp; Young Adults</div><div class="audience-desc">Karnataka university students seeking natural stress relief, focus, and energy without medication.</div></div>
+    </div>
+    <div class="audience-card">
+      <span class="audience-icon">👨‍👩‍👧</span>
+      <div><div class="audience-title"><span class="kn">ಪೋಷಕರು</span> — Parents</div><div class="audience-desc">Parents who want to lead by example and raise healthy families with sustainable natural habits.</div></div>
+    </div>
+    <div class="audience-card">
+      <span class="audience-icon">🌸</span>
+      <div><div class="audience-title">Health Challenges</div><div class="audience-desc">Those dealing with thyroid, PCOD, high BP, or migraines looking for holistic, natural support.</div></div>
+    </div>
+    <div class="audience-card">
+      <span class="audience-icon">🙏</span>
+      <div><div class="audience-title">Spiritual Seekers</div><div class="audience-desc">Those on a path of inner growth who want to align body, breath, and mind through traditional practices.</div></div>
+    </div>
+  </div>
+
+  <div class="not-for reveal">
+    <span>⚠️</span>
+    <span><strong>NOT FOR:</strong> Pregnant women · Elderly above 65 years · Children under 14. Please consult your doctor if you are on medication for a serious condition.</span>
+  </div>
+</section>
+
+<!-- ══ SECTION 7: 7 HABITS ══ -->
+<section class="habits" id="schedule">
+  <div class="section-header reveal">
+    <div class="section-tag ds-tag">7 Transformative Habits</div>
+    <h2 class="kn dark">21 ದಿನಗಳಲ್ಲಿ ನೀವು ಕಲಿಯುವ 7 Habits</h2>
+    <p class="dark">Ancient wisdom. Modern application. Real results in 21 days.</p>
+  </div>
+
+  <div class="habits-table reveal">
+    <div class="habit-row">
+      <div class="habit-num">1</div>
+      <div class="habit-icon-name"><div class="habit-icon">🌅</div><div class="habit-kannada kn">ಬ್ರಾಹ್ಮೀ ಮುಹೂರ್ತ</div><div class="habit-english">Early Morning Rising</div></div>
+      <div class="habit-desc">Wake before sunrise to align with nature's rhythm. This single habit transforms sleep quality, mental clarity, and how you feel all day.</div>
+    </div>
+    <div class="habit-row">
+      <div class="habit-num">2</div>
+      <div class="habit-icon-name"><div class="habit-icon">🧘</div><div class="habit-kannada kn">ಆಸನ ಅಭ್ಯಾಸ</div><div class="habit-english">Daily Yoga Sadhana</div></div>
+      <div class="habit-desc">60-minute daily yoga session — postures taught from scratch. Beginners welcome. Every body, every fitness level.</div>
+    </div>
+    <div class="habit-row">
+      <div class="habit-num">3</div>
+      <div class="habit-icon-name"><div class="habit-icon">🌬️</div><div class="habit-kannada kn">ಪ್ರಾಣಾಯಾಮ</div><div class="habit-english">Pranayama &amp; Breathwork</div></div>
+      <div class="habit-desc">15 minutes of structured breath practice — Anuloma Viloma, Kapalbhati, Bhramari. Reduces stress hormones and increases oxygen to every cell.</div>
+    </div>
+    <div class="habit-row">
+      <div class="habit-num">4</div>
+      <div class="habit-icon-name"><div class="habit-icon">🥗</div><div class="habit-kannada kn">ಸಾತ್ವಿಕ ಆಹಾರ</div><div class="habit-english">Plant-Based Sattvic Food</div></div>
+      <div class="habit-desc">Simple, whole, plant-based meals rooted in Karnataka cuisine. Recipes shared daily in Kannada with full grocery guidance. No fancy ingredients needed.</div>
+    </div>
+    <div class="habit-row">
+      <div class="habit-num">5</div>
+      <div class="habit-icon-name"><div class="habit-icon">🌙</div><div class="habit-kannada kn">ಸಂಜೆ 7ರ ಮೊದಲೇ ರಾತ್ರಿ ಊಟ</div><div class="habit-english">Early Dinner</div></div>
+      <div class="habit-desc">Eating before 7 PM gives your digestive system time to rest and repair overnight — transforming sleep quality, skin glow, and morning energy.</div>
+    </div>
+    <div class="habit-row">
+      <div class="habit-num">6</div>
+      <div class="habit-icon-name"><div class="habit-icon">🌊</div><div class="habit-kannada kn">ಜಲ ಚಿಕಿತ್ಸೆ</div><div class="habit-english">Water Therapy</div></div>
+      <div class="habit-desc">Structured water intake protocol — warm water fasting, copper vessel practices, and timing your hydration for maximum cellular absorption.</div>
+    </div>
+    <div class="habit-row">
+      <div class="habit-num">7</div>
+      <div class="habit-icon-name"><div class="habit-icon">☀️</div><div class="habit-kannada kn">ಪ್ರಕೃತಿ ಸಂಪರ್ಕ</div><div class="habit-english">Sunlight &amp; Nature</div></div>
+      <div class="habit-desc">Daily earthing, sunlight exposure, and time in nature. Simple but powerfully restorative practices that cost nothing and heal everything.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION 8: TEACHER ══ -->
+<section class="teacher" id="teacher">
+  <div class="reveal">
+    <img src="https://placehold.co/450x500/6B9E7A/FDFAF2?text=@sushiidays" alt="Sushii — Founder Shash Studios" class="teacher-img">
+  </div>
+  <div class="reveal">
+    <div class="section-tag ds-tag" style="justify-content:flex-start;margin-bottom:.8rem;"><span style="width:28px;height:1px;background:var(--deep-sage);display:block"></span>ನಿಮ್ಮ ಗುರು — Your Teacher</div>
+    <h2 class="teacher-name">Sushii</h2>
+    <p class="teacher-subtitle">Founder of Shash Studios, Mysuru</p>
+    <div class="teacher-tags">
+      <span class="teacher-tag">@sushiidays</span>
+      <span class="teacher-tag">Yoga Instructor</span>
+      <span class="teacher-tag">90s Kid</span>
+      <span class="teacher-tag">Mysuru Karnataka</span>
+    </div>
+    <div class="bio-kn">'ನಾನು Mysuru ನಲ್ಲಿ ಹುಟ್ಟಿ ಬೆಳೆದ 90s ಮಗಳು — ಕನ್ನಡ ನನ್ನ ಉಸಿರು, yoga ನನ್ನ ಜೀವ.'</div>
+    <p class="bio-en">"I began practicing yoga during a period of deep burnout. Today I teach because I know from the inside that these tools work."</p>
+    <p class="teacher-story">"When there was no one teaching yoga in Kannada online, I decided to be that person. Shash Studios was born from that single decision — a commitment to make ancient wellness accessible in our own language, to our own people."</p>
+    <a href="mailto:shashstudios@gmail.com" class="contact-badge">✉️ shashstudios@gmail.com</a>
+  </div>
+</section>
+
+<!-- ══ SECTION 9: SCHEDULE & REGISTRATION ══ -->
+<section class="register" id="register">
+  <div class="register-grid">
+    <div class="register-left reveal">
+      <div class="section-tag ds-tag" style="justify-content:flex-start;margin-bottom:.8rem;"><span style="width:28px;height:1px;background:var(--deep-sage);display:block"></span>ನೋಂದಾಯಿಸಿ</div>
+      <h2>Register Now</h2>
+      <p>June 1 – June 21, 2025 · Every day for 21 days</p>
+
+      <span class="block-label">⏰ Choose Your Batch Time</span>
+      <div class="batch-cards" id="batchCards">
+        <div class="batch-card" data-batch="6am" onclick="selectBatch(this)">
+          <span style="font-size:1.2rem">⏰</span>
+          <div><div class="batch-time">6:00 – 7:00 AM IST</div><div class="batch-desc">For early risers &amp; homemakers</div></div>
+        </div>
+        <div class="batch-card" data-batch="8am" onclick="selectBatch(this)">
+          <span style="font-size:1.2rem">⏰</span>
+          <div><div class="batch-time">8:00 – 9:00 AM IST</div><div class="batch-desc">For professionals with flexible starts</div></div>
+        </div>
+        <div class="batch-card" data-batch="4pm" onclick="selectBatch(this)">
+          <span style="font-size:1.2rem">⏰</span>
+          <div><div class="batch-time">4:00 – 5:00 PM IST</div><div class="batch-desc">For students &amp; evening practitioners</div></div>
+        </div>
+        <div class="batch-card" data-batch="8pm" onclick="selectBatch(this)">
+          <span style="font-size:1.2rem">⏰</span>
+          <div><div class="batch-time">8:00 – 9:00 PM IST</div><div class="batch-desc">For IT professionals</div></div>
+        </div>
+      </div>
+
+      <div class="recording-note">📹 Session recording available for 24 hours after each live class. Attend live for best results.</div>
+
+      <span class="block-label">💚 Choose Your Contribution</span>
+      <div class="price-cards" id="priceCards">
+        <div class="price-card" data-price="199" onclick="selectPrice(this)"><div class="price-amount">₹199</div><div class="price-tier">Student / Low Income</div></div>
+        <div class="price-card sel" data-price="299" onclick="selectPrice(this)"><div class="price-amount">₹299</div><div class="price-tier">Standard</div></div>
+        <div class="price-card" data-price="399" onclick="selectPrice(this)"><div class="price-amount">₹399</div><div class="price-tier">Supporter</div></div>
+        <div class="price-card" data-price="499" onclick="selectPrice(this)"><div class="price-amount">₹499</div><div class="price-tier">Patron</div></div>
+      </div>
+      <p class="pay-note">ನಿಮ್ಮ ಶಕ್ತಿಯ ಪ್ರಕಾರ ನೀಡಿ — Pay what you can.</p>
+    </div>
+
+    <div class="reg-form reveal">
+      <h3>Complete Your Registration</h3>
+      <form id="regForm" onsubmit="handleRegister(event)">
+        <div class="form-group">
+          <label class="form-label"><span class="kn-lbl kn">ನಿಮ್ಮ ಹೆಸರು</span> / Full Name <span style="color:red">*</span></label>
+          <input type="text" class="form-input" id="f-name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="kn-lbl kn">WhatsApp ನಂಬರ್</span> / WhatsApp Number <span style="color:red">*</span></label>
+          <input type="tel" class="form-input" id="f-phone" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="kn-lbl kn">ನಿಮ್ಮ ಊರು</span> / City</label>
+          <select class="form-select" id="f-city">
+            <option value="">Select your city</option>
+            <option>Bengaluru</option><option>Mysuru</option><option>Mangaluru</option>
+            <option>Dharwad</option><option>Hubli</option><option>Udupi</option>
+            <option>Other Karnataka</option><option>Outside Karnataka</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Batch Time</label>
+          <select class="form-select" id="f-batch">
+            <option value="">Select batch time</option>
+            <option value="6am">6:00 – 7:00 AM IST</option>
+            <option value="8am">8:00 – 9:00 AM IST</option>
+            <option value="4pm">4:00 – 5:00 PM IST</option>
+            <option value="8pm">8:00 – 9:00 PM IST</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Contribution Amount</label>
+          <select class="form-select" id="f-price">
+            <option value="">Select amount</option>
+            <option value="199">₹199 — Student / Low Income</option>
+            <option value="299" selected>₹299 — Standard</option>
+            <option value="399">₹399 — Supporter</option>
+            <option value="499">₹499 — Patron</option>
+          </select>
+        </div>
+        <label class="form-checkbox">
+          <input type="checkbox" id="f-terms" required>
+          I agree to the terms &amp; conditions and the 24-hour recording policy. I understand this is a wellness program, not medical treatment.
+        </label>
+        <button type="submit" class="btn-gold kn" id="register-btn" style="width:100%;justify-content:center;">🌿 ಈಗಲೇ ನೋಂದಾಯಿಸಿ — Register Now →</button>
+      </form>
+      <div class="scholarship-link">
+        <span class="kn" style="font-size:.75rem;color:#bbb;">ಆರ್ಥಿಕ ತೊಂದರೆ ಇದ್ದರೆ —</span>
+        Scholarship available → <a href="mailto:shashstudios@gmail.com?subject=Scholarship Application">Apply here</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION 10: FAQ ══ -->
+<section class="faq" id="faq">
+  <div class="section-header reveal">
+    <div class="section-tag sage-tag">FAQs</div>
+    <h2 class="kn dark">ಸಾಮಾನ್ಯ ಪ್ರಶ್ನೆಗಳು</h2>
+    <p class="dark">Frequently Asked Questions</p>
+  </div>
+
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)"><span class="kn">ನನಗೆ yoga ಅನುಭವ ಇಲ್ಲ — ಸೇರ್ಕೊಳ್ಳಬಹುದಾ?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a"><div class="faq-a-inner"><span class="kn">ಹೌದು, ಇದು complete beginners ಗಾಗಿ.</span> Every pose is taught from scratch with modifications for all body types. No prior experience needed.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)"><span class="kn">Sessions ಕನ್ನಡದಲ್ಲಿ ಇರ್ತಾ?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a"><div class="faq-a-inner"><span class="kn">ಹೌದು.</span> Sessions are conducted primarily in Kannada, with English used only for key technical yoga terms. You will feel completely at home.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)"><span class="kn">Live session miss ಆದರೆ?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a"><div class="faq-a-inner">Recording is available for 24 hours after each live class. We encourage attending live for the best results, but recordings ensure you never fall behind.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)"><span class="kn">ಪ್ರತಿ ದಿನ ಎಷ್ಟು ಸಮಯ ಬೇಕಾಗುತ್ತೆ?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a"><div class="faq-a-inner">60 minutes live yoga + 15 minutes pranayama = 75 minutes total per day. This is the full daily commitment required for transformation.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)"><span class="kn">Vegetarian ಅಲ್ಲ — ಪರವಾಗಿಲ್ಲವಾ?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a"><div class="faq-a-inner">We follow a sattvic plant-based plan for 21 days as part of the program. Many non-vegetarian students join and genuinely feel much better. You can return to your regular diet after the challenge.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)"><span class="kn">Scholarship ಸಿಗುತ್ತಾ?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a"><div class="faq-a-inner">Yes. We believe no one should miss this due to financial reasons. Email <a href="mailto:shashstudios@gmail.com" style="color:var(--deep-sage);font-weight:600;">shashstudios@gmail.com</a> before registering and we will work something out.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)"><span class="kn">Thyroid / PCOD / BP ಇದ್ದರೆ join ಮಾಡಬಹುದಾ?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a"><div class="faq-a-inner">Yes — many of our most successful students have these exact conditions. The program is gentle and holistic. Please consult your doctor before joining if you are on medication.</div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFAQ(this)"><span class="kn">One-time payment ಹೌದಾ? Hidden costs ಇಲ್ಲವಾ?</span><span class="faq-icon">+</span></button>
+      <div class="faq-a"><div class="faq-a-inner"><span class="kn">ಹೌದು, ಒಂದೇ payment.</span> One payment. No subscriptions, no upsells, no hidden costs. What you pay is what you get — 21 full days.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SECTION 11: FINAL CTA ══ -->
+<section class="final-cta">
+  <p class="urgency-line reveal">⏳ Only 47 seats left · Registration closes when full</p>
+  <h2 class="kn reveal">21 ದಿನ. ಒಂದೇ ನಿರ್ಧಾರ. ಜೀವನ ಪೂರ್ತಿ ಆರೋಗ್ಯ.</h2>
+  <h3 class="reveal">21 Days. One Decision. A Lifetime of Better Health.</h3>
+  <p class="kn reveal" style="font-size:.92rem;">ನೀವು ಇದನ್ನು ಓದುತ್ತಿದ್ದೀರ ಎಂದರೆ, ಬದಲಾವಣೆ ಬೇಕು ಎಂಬ ಸಂಕೇತ ಒಳಗಿನಿಂದ ಬಂದಿದೆ.</p>
+  <p class="reveal">If you're reading this, something inside you already knows it's time. 21 days is all it takes to reset your body, quiet your mind, and feel genuinely alive again — in your own language, at your own pace, live from Mysuru.</p>
+  <div style="margin:2.5rem 0" class="reveal">
+    <a href="#register" class="btn-gold kn">🌿 ಈಗಲೇ ನೋಂದಾಯಿಸಿ — Register Now →</a>
+  </div>
+  <div class="trust-row reveal">
+    <span>🔒 Secure Payment</span>
+    <span>✅ Instant WhatsApp Confirmation</span>
+    <span>📹 24hr Recording Access</span>
+    <span>💌 shashstudios@gmail.com</span>
+  </div>
+  <p style="font-size:.8rem;font-style:italic;color:rgba(255,255,255,.4);margin-top:1rem;">
+    <span class="kn">ಆರ್ಥಿಕ ತೊಂದರೆ ಇದ್ದರೆ —</span>
+    <a href="mailto:shashstudios@gmail.com?subject=Scholarship Application" style="color:var(--gold);">Scholarship available → Apply here</a>
+  </p>
+  <div class="closing-tagline">
+    "ಉಸಿರಾಡಿ. ಚಲಿಸಿ. ಗುಣಮುಖರಾಗಿ. ಪ್ರತಿದಿನ."
+    <span>"Breathe. Move. Heal. Every Day." — @sushiidays</span>
+  </div>
+</section>
+
+<!-- ══ SECTION 12: FOOTER ══ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">SHASH Studios</div>
+      <div class="footer-logo-kn">ಸ್ಟುಡಿಯೋಸ್</div>
+      <p class="footer-tagline">"ಉಸಿರಾಡಿ. ಚಲಿಸಿ. ಗುಣಮುಖರಾಗಿ." — Breathe. Move. Heal.</p>
+      <nav class="footer-nav">
+        <a href="#">Workshops</a>
+        <a href="#">Yoga Classes</a>
+        <a href="#">Recipes</a>
+        <a href="#">About</a>
+        <a href="#">Community</a>
+        <a href="mailto:shashstudios@gmail.com">Contact</a>
+      </nav>
+      <div class="footer-social" style="margin-top:1rem;">
+        <a href="https://instagram.com/sushiidays" target="_blank" class="social-link">@sushiidays</a>
+        <a href="https://instagram.com/shash.studios" target="_blank" class="social-link">@shash.studios</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Refund Policy</a>
+      </div>
+      <p style="font-size:.76rem;color:rgba(255,255,255,.3);line-height:1.7;margin-top:.8rem;">
+        For questions &amp; scholarship:<br>
+        <a href="mailto:shashstudios@gmail.com" style="color:var(--gold);text-decoration:none;">shashstudios@gmail.com</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Shash Studios (@sushiidays). Made with 🪷 in Mysuru, Karnataka.</span>
+    <span>Karnataka's Yoga &amp; Wellness Community</span>
+  </div>
+</footer>
+
+<!-- ══ FLOATING WHATSAPP ══ -->
+<a href="https://wa.me/919999999999" target="_blank" class="wa-float" title="Chat on WhatsApp">💬</a>
+
+<script>
+// ── COUNTDOWN to June 1 2025 06:00 IST (UTC+5:30) ──
+function tick() {
+  var target = new Date('2025-06-01T00:30:00Z').getTime(); // 06:00 IST = 00:30 UTC
+  var now = Date.now();
+  var diff = target - now;
+  if (diff <= 0) {
+    document.getElementById('countdown').innerHTML =
+      '<div style="background:var(--deep-sage);color:var(--gold);padding:.7rem 1.5rem;border-radius:12px;font-weight:700;font-size:.88rem;">🌿 Batch in progress — join now!</div>';
+    return;
+  }
+  var d = Math.floor(diff / 86400000);
+  var h = Math.floor((diff % 86400000) / 3600000);
+  var m = Math.floor((diff % 3600000) / 60000);
+  var s = Math.floor((diff % 60000) / 1000);
+  document.getElementById('cd-days').textContent = String(d).padStart(2,'0');
+  document.getElementById('cd-hrs').textContent  = String(h).padStart(2,'0');
+  document.getElementById('cd-min').textContent  = String(m).padStart(2,'0');
+  document.getElementById('cd-sec').textContent  = String(s).padStart(2,'0');
+}
+tick();
+setInterval(tick, 1000);
+
+// ── STICKY NAV ──
+window.addEventListener('scroll', function() {
+  document.getElementById('stickyNav').classList.toggle('show', window.scrollY > 320);
+});
+
+// ── BATCH CARD SELECTION ──
+function selectBatch(el) {
+  document.querySelectorAll('.batch-card').forEach(function(c){ c.classList.remove('sel'); });
+  el.classList.add('sel');
+  document.getElementById('f-batch').value = el.getAttribute('data-batch');
+}
+
+// ── PRICE CARD SELECTION ──
+function selectPrice(el) {
+  document.querySelectorAll('.price-card').forEach(function(c){ c.classList.remove('sel'); });
+  el.classList.add('sel');
+  document.getElementById('f-price').value = el.getAttribute('data-price');
+}
+
+// Sync dropdowns → cards
+document.getElementById('f-batch').addEventListener('change', function() {
+  var v = this.value;
+  document.querySelectorAll('.batch-card').forEach(function(c){
+    c.classList.toggle('sel', c.getAttribute('data-batch') === v);
+  });
+});
+document.getElementById('f-price').addEventListener('change', function() {
+  var v = this.value;
+  document.querySelectorAll('.price-card').forEach(function(c){
+    c.classList.toggle('sel', c.getAttribute('data-price') === v);
+  });
+});
+
+// ── FAQ ACCORDION ──
+function toggleFAQ(btn) {
+  var item = btn.closest('.faq-item');
+  var wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
+  if (!wasOpen) item.classList.add('open');
+}
+
+// ── REGISTER FORM ──
+function handleRegister(e) {
+  e.preventDefault();
+  var name  = document.getElementById('f-name').value.trim();
+  var phone = document.getElementById('f-phone').value.trim();
+  var batch = document.getElementById('f-batch').value;
+  var price = document.getElementById('f-price').value;
+  if (!batch) { alert('Please select a batch time.'); return; }
+  if (!price) { alert('Please select a contribution amount.'); return; }
+  // Placeholder — replace this block with Razorpay init
+  alert('🌿 Thank you, ' + name + '!\n\nRegistration received:\n📱 WhatsApp: ' + phone + '\n⏰ Batch: ' + batch + '\n💚 Amount: ₹' + price + '\n\nYou will receive a WhatsApp confirmation shortly.\nQueries: shashstudios@gmail.com\n\n— Shash Studios, Mysuru');
+}
+
+// ── REVEAL ON SCROLL ──
+var reveals = document.querySelectorAll('.reveal');
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry, i) {
+    if (entry.isIntersecting) {
+      setTimeout(function(){ entry.target.classList.add('visible'); }, i * 55);
+    }
+  });
+}, { threshold: 0.08 });
+reveals.forEach(function(el){ observer.observe(el); });
+</script>
+</body>
+</html>
